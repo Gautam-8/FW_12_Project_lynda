@@ -1,5 +1,5 @@
-{
-    "products":[
+
+    [
         {
             "title": "PYTHON",
             "name": "Python programming for beginers",
@@ -482,4 +482,3 @@
           "price": 900
       }
     ]
-}
