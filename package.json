@@ -1,0 +1,23 @@
+{
+  "name": "fw_12_project_lynda",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gautam-8/FW_12_Project_lynda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gautam-8/FW_12_Project_lynda/issues"
+  },
+  "homepage": "https://github.com/Gautam-8/FW_12_Project_lynda#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
