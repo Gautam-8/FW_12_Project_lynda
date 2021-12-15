@@ -1,0 +1,24 @@
+<script>
+async function getData(){
+
+	let res = await fetch("http://localhost:1234/courses");
+
+	let data = await res.json();
+	console.log(data.courses);
+
+}
+
+getData();
+/////////////////////////////////////////////////////////////////
+async function getsearch(){
+
+let res = await fetch("http://localhost:1234/search");
+
+let searchdata = await res.json();
+console.log(searchdata.courses);
+
+}
+
+getsearch();
+</script>
+
