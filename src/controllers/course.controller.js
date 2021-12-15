@@ -6,7 +6,7 @@ const Course = require("../models/course.model");
 
 router.get("" , async (req , res ) => {
 
-    const courses = await Course.find().limit(10).lean().exec();
+    const courses = await Course.find().limit(12).lean().exec();
    
     return res.send({courses})
       
