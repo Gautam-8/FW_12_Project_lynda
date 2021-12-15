@@ -1,5 +1,4 @@
-{
-  "data": [
+ [
     {
       "img": "https://media-exp1.licdn.com/dms/image/C560DAQHK5ldpBob0iw/learning-public-crop_144_256/0/1570206621477?e=1636880400&v=beta&t=1UwwhE-V1qzxK6qpwnY9g7Q7HgTeEZpavli3VPd_T-o",
       "name": "Learning Python",
@@ -181,4 +180,3 @@
       "price": "1900"
     }
   ]
-}
