@@ -5,85 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/save.css" />
     <style>
-.subhead{
-    display: flex;
-    font-family: Open Sans, sans-serif;
-}
-.subhead span{
-    margin-right: 50px;
-    color: grey;
-}
-.s1div{
-    display: flex;
-    font-family: Open Sans, sans-serif;
-    
-}
-.s2div{
-    height:150px;
-    width:240px;
-    border-radius: 3px;
-}
-.s2div .simg{
-height: 100%;
-width:100%;
-border-radius: 3px;
-}
+      .s4div{
+          display: flex;
+          width:150px;
+          height:45px;
+          border:1.5px solid #0073b1;
+          color: #0073b1;
+        margin-top: 75px;
+        margin-left: 500px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+      }
     </style>
 </head>
 <body>
-    <div class="shead">
-        <h2>My Learning</h2>
-        <div class="subhead">
-            <span>In Progress</span>
-            <span>Saved</span>
-            <span>My Collection</span>
-            <span>Learning History</span>
-            <span>Skills</span>
+    <div id="nab"></div>
+    <div class="divtt">
+        <div class="shead">
+            <h2>My Learning</h2>
+            <div class="subhead">
+                <span>In Progress</span>
+                <span id='save' class="sv1">Saved</span>
+                <span>My Collection</span>
+                <span>Learning History</span>
+                <span>Skills</span>
+            </div>
         </div>
     </div>
-    <hr>
-    <div id="content"></div>
-   <script>
-       var parent = document.getElementById("content");
-       var arr=[ {
-        title: "PYTHON",
-        name: "Python programming for beginers",
-        by: "By:Kethrin",
-        date: "19th September 2020",
-        img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-        link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-        time: 40,
-        price: 1500,
-    }];
-       arr.forEach((el) => {
-           var s1div= document.createElement('div');
-           s1div.setAttribute("class", "s1div")
-            var s2div= document.createElement('div');
-            s2div.setAttribute("class", "s2div");
-
-            var simg= document.createElement('img');
-            simg.src=el.img;
-            simg.setAttribute("class","simg");
-
-            s2div.append(simg);
-
-            var s3div= document.createElement('div');
-
-            var sp1= document.createElement('p');
-            sp1.textContent = "COURSE";
-
-            var sp2= document.createElement('p');
-            sp2.textContent = el.name;
-
-            var sp3= document.createElement('p');
-            sp3.textContent = "By:"+" "+el.by
-            s3div.append(sp1,sp2,sp3);
-            s1div.append(s2div,s3div)
-            parent.append(s1div)
-
-       })
-   </script>
+        <hr id='hr1'>
+        <div id="content"></div>
+    
+         <!-- footer start from here -->
+    <div id="footer">
+        <ul>
+          <li>English(English)</li>
+          <li>About</li>
+          <li>Become a Instructor</li>
+          <li>Buy for my team</li>
+          <li>Help</li>
+          <li>
+            Privacy & Terms<img
+              src="https://img.icons8.com/small/16/000000/private-pv2.png"
+            />
+          </li>
+          <li>Accessibility</li>
+          <li>
+            Apps<img
+              src="https://img.icons8.com/small/16/000000/private-pv2.png"
+            />
+          </li>
+        </ul>
+        <div id="last-line">
+          <h1>Linked</h1>
+          <img
+            src="https://th.bing.com/th?q=LinkedIn+Logo+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247"
+            alt="iN"
+          />
+          <span>LinkedIn Corporation © 2021</span>
+        </div>
+      </div>
+      <!-- footer end -->
+   
+  
 
 </body>
 </html>
+<script src='../js/save.js'></script>
+<script type="module" src="../JS/navbaritem.js"></script>
